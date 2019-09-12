@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+--------------------------------------------------------------
+
+entity decoder_32_bit is 
+	port(	SEL   : in std_logic_vector(4 downto 0);
+		d_mux_out : in std_logic_vector(31 downto 0);
+end decoder_32_bit;
+
+--------------------------------------------------------------
+
+architecture dataflow of n_bit_decoder is
+begin
+	with SEL select
+		d_mux_out when "000",
+		d_mux_out 
+		
+		
+		
+

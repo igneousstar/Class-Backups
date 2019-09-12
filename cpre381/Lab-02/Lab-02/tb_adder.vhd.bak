@@ -1,0 +1,88 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+-- This is empty
+entity tb_adder is 
+
+end tb_adder;
+
+architecture behavior of tb_adder is
+
+-- Declare the component we are going to instantiate --
+
+component n_bit_adder_struct
+	generic(N : integer := 32);
+	port(	C_in   : in std_logic;
+		n_A  : in std_logic_vector(N-1 downto 0);
+		n_B  : in std_logic_vector(N-1 downto 0);
+		n_sum  : out std_logic_vector(N-1 downto 0));
+end component;
+
+
+component n_bit_adder_flow
+	generic(N : integer := 32);
+	port(	n_A  : in std_logic_vector(N-1 downto 0);
+		n_B  : in std_logic_vector(N-1 downto 0);
+		n_sum  : out std_logic_vector(N-1 downto 0));
+end component;
+
+---- Signals used for testing ----
+signal test_A, test_B, test_sum_flow, test_sum_struct  : std_logic_vector (31 downto 0);
+signal carry_in : std_logic;
+
+----------------------------------
+
+begin
+
+------- Devices to be tested -------
+DUT1: n_bit_adder_struct
+  generic map(32)
+	port map(C_in => carry_in,
+		n_A => test_A,
+		n_B => test_B,
+		n_sum => test_sum_struct);
+
+DUT4: n_bit_adder_flow
+  generic map(32)
+	port map(n_A => test_A,
+	n_B => test_B,
+		n_sum => test_sum_flow);
+
+---- Start Testing ----
+process
+
+	begin
+	
+	carry_in <= '0';
+	
+	test_A <= "11001100110011001100110011001100";
+	test_B <= "00110011001100110011001100110011";
+
+	wait for 100 ns;
+
+	test_A <= "11111111111111111111111111111111";
+	test_B <= "00000000000000000000000000000001";
+
+
+	wait for 100 ns;
+
+	test_A <= "11110000111100001111000011110000";
+	test_B <= "00010001000100010001000100010001";
+
+	wait for 100 ns;
+	
+	test_A <= "11111111111111110000000000000000";
+	test_B <= "00000000000000010000000000000001";
+
+	wait for 100 ns;
+
+	test_A <= "00010001000100010001000100010001";
+	test_B <= "00110011001100110011001100110011";
+
+	wait for 100 ns;
+
+	end process;
+
+
+
+end behavior;

@@ -1,0 +1,19 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+--------------------------------------------------------------
+
+entity decoder_32_bit is 
+	port(	i_n   : in std_logic;
+		i_RST	: in std_logic;
+		i_WE	: in std_logic;
+		i_reg  : in std_logic_vector(N-1 downto 0);
+		o_reg  : out std_logic_vector(N-1 downto 0));
+end decoder_32_bit;
+
+--------------------------------------------------------------
+
+architecture dataflow of n_bit_decoder is
+begin
+	with SEL
+
