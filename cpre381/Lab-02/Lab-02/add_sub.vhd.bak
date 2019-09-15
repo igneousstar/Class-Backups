@@ -26,11 +26,11 @@ component n_bit_2_1_mux_flow
 	generic(N : integer := 32);
 	port(	n_A  : in std_logic_vector(N-1 downto 0);
 		n_B  : in std_logic_vector(N-1 downto 0);
-		n_F  : out std_logic_vector(N-1 downto 0);
-		s    : in std_logic);
+		i_C  : in std_logic;
+		n_sum  : out std_logic_vector(N-1 downto 0));
 end component;
 
-component n_bit_adder_struct
+component n_bit_adder_flow
 	generic(N : integer := 32);
 	port(	C_in : std_logic;
 		n_A  : in std_logic_vector(N-1 downto 0);
@@ -42,20 +42,18 @@ end component;
 -------------- Signals -------------------
 
 signal B_comp, B_muxed : std_logic_vector(N-1 downto 0);
-signal carry_over : std_logic;
 
 ------------------------------------
 
 begin
 
 ------- Devices to be tested -------
-adder: n_bit_adder_struct
+adder: n_bit_adder_flow
   generic map(N)
-	port map(C_in => carry_over,
-		n_A => n_A,
+	port map(n_A => n_A,
 		n_B => B_muxed,
-		n_sum => n_result,
-		C_out => carr_over);
+		i_C => sel,
+		n_sum => n_result);
 
 one_comp: one_comp_struct
   generic map(N)

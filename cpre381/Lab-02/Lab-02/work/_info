@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02
 Eadd_sub
-Z1 w1568133532
+Z1 w1568383741
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
@@ -21,9 +21,9 @@ ViOTR;[ZjDF=6]bfCnoHFb3
 !s100 a32F_Y]4];6cjJ7@cLbaL3
 Z6 OP;C;10.4a;61
 32
-Z7 !s110 1568133536
+Z7 !s110 1568383744
 !i10b 1
-Z8 !s108 1568133536.000000
+Z8 !s108 1568383744.000000
 Z9 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/add_sub.vhd|
 Z10 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/add_sub.vhd|
 !i113 1
@@ -33,10 +33,10 @@ Astructure
 R2
 R3
 DEx4 work 7 add_sub 0 22 iOTR;[ZjDF=6]bfCnoHFb3
-l49
+l47
 L16
-V@ein=PC3L=FHJ9UYYfUY]3
-!s100 X[mm2Jj0dKbKakUL7[=oK0
+Vh6o2QSRmz3aS61Kd`:`mO3
+!s100 3XFf4iTUT;nW<imbb<lZe2
 R6
 32
 R7
@@ -342,7 +342,7 @@ R49
 R11
 R12
 En_bit_adder_flow
-Z50 w1568085711
+Z50 w1568383230
 R2
 R3
 R0
@@ -350,54 +350,54 @@ Z51 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_flow.vhd
 Z52 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_flow.vhd
 l0
 L6
-VcaG_OhEJaCeKAcbY0;EBX1
-!s100 64>zXk4Dazih;;V7T[UiJ3
+V3_Xf8L8Fe4`ZFHP>IOC^H3
+!s100 nlUYJ1j9[YS7hE=jMUT5]3
 R6
 32
-R41
+Z53 !s110 1568383245
 !i10b 1
-R47
-Z53 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_flow.vhd|
-Z54 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_flow.vhd|
+Z54 !s108 1568383245.000000
+Z55 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_flow.vhd|
+Z56 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_flow.vhd|
 !i113 1
 R11
 R12
 Adataflow
 R2
 R3
-DEx4 work 16 n_bit_adder_flow 0 22 caG_OhEJaCeKAcbY0;EBX1
-l16
-L13
-VIXSQI@OOR5U:J>cRBF4Jg3
-!s100 =;Nk:ZR<1P7A?]`E5N`ng1
+DEx4 work 16 n_bit_adder_flow 0 22 3_Xf8L8Fe4`ZFHP>IOC^H3
+l17
+L14
+V9VenTP[K96z:?QkX>D0^=1
+!s100 @aIFN3eBSBmRhde7h6aKO3
 R6
 32
-R41
-!i10b 1
-R47
 R53
+!i10b 1
 R54
+R55
+R56
 !i113 1
 R11
 R12
 En_bit_adder_struct
-Z55 w1568133163
+Z57 w1568133163
 R2
 R3
 R0
-Z56 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_struct.vhd
-Z57 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_struct.vhd
+Z58 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_struct.vhd
+Z59 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_struct.vhd
 l0
 L6
 V>[lA=e3W0l<j;kzQO4:f:2
 !s100 ]`@YNjEMX;ICR<YB?jl]10
 R6
 32
-Z58 !s110 1568133367
+Z60 !s110 1568133367
 !i10b 1
-Z59 !s108 1568133367.000000
-Z60 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_struct.vhd|
-Z61 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_struct.vhd|
+Z61 !s108 1568133367.000000
+Z62 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_struct.vhd|
+Z63 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/n_bit_adder_struct.vhd|
 !i113 1
 R11
 R12
@@ -411,21 +411,21 @@ VkbSZLJo[<f_ZS6jbd??:n2
 !s100 <T<f4V?@W]7CJm]CB6]562
 R6
 32
-R58
-!i10b 1
-R59
 R60
+!i10b 1
 R61
+R62
+R63
 !i113 1
 R11
 R12
 Eone_comp_flow
-Z62 w1567612401
+Z64 w1567612401
 R2
 R3
 R0
-Z63 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_flow.vhd
-Z64 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_flow.vhd
+Z65 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_flow.vhd
+Z66 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_flow.vhd
 l0
 L5
 VYULOZab3IEN;no_O4?Tzi0
@@ -435,8 +435,8 @@ R6
 R41
 !i10b 1
 R47
-Z65 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_flow.vhd|
-Z66 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_flow.vhd|
+Z67 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_flow.vhd|
+Z68 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_flow.vhd|
 !i113 1
 R11
 R12
@@ -453,18 +453,18 @@ R6
 R41
 !i10b 1
 R47
-R65
-R66
+R67
+R68
 !i113 1
 R11
 R12
 Eone_comp_struct
-Z67 w1567612388
+Z69 w1567612388
 R2
 R3
 R0
-Z68 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_struct.vhd
-Z69 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_struct.vhd
+Z70 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_struct.vhd
+Z71 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_struct.vhd
 l0
 L6
 ViT;ZBiF;Q_3HRKzo05LJ<0
@@ -474,8 +474,8 @@ R6
 R41
 !i10b 1
 R47
-Z70 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_struct.vhd|
-Z71 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_struct.vhd|
+Z72 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_struct.vhd|
+Z73 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/one_comp_struct.vhd|
 !i113 1
 R11
 R12
@@ -492,8 +492,8 @@ R6
 R41
 !i10b 1
 R47
-R70
-R71
+R72
+R73
 !i113 1
 R11
 R12
@@ -502,8 +502,8 @@ R13
 R2
 R3
 R0
-Z72 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/org2.vhd
-Z73 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/org2.vhd
+Z74 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/org2.vhd
+Z75 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/org2.vhd
 l0
 L23
 VJRk_J;=P2[3FhjKXmTI_61
@@ -513,8 +513,8 @@ R6
 R41
 !i10b 1
 R47
-Z74 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/org2.vhd|
-Z75 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/org2.vhd|
+Z76 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/org2.vhd|
+Z77 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/org2.vhd|
 !i113 1
 R11
 R12
@@ -531,68 +531,68 @@ R6
 R41
 !i10b 1
 R47
-R74
-R75
+R76
+R77
 !i113 1
 R11
 R12
 Etb_add_sub
-Z76 w1568150805
+Z78 w1568150805
 R2
 R3
 R0
-Z77 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_add_sub.vhd
-Z78 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_add_sub.vhd
+Z79 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_add_sub.vhd
+Z80 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_add_sub.vhd
 l0
 L5
 VaGaMEW4iIMSo1;hafi_7;1
 !s100 P:l2=H[Hn:iTDl6=aZcb;3
 R6
 32
-Z79 !s110 1568150816
+Z81 !s110 1568383954
 !i10b 1
-Z80 !s108 1568150816.000000
-Z81 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_add_sub.vhd|
-Z82 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_add_sub.vhd|
+Z82 !s108 1568383954.000000
+Z83 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_add_sub.vhd|
+Z84 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_add_sub.vhd|
 !i113 1
 R11
 R12
 Abehavior
 R2
 R3
-Z83 DEx4 work 10 tb_add_sub 0 22 aGaMEW4iIMSo1;hafi_7;1
+Z85 DEx4 work 10 tb_add_sub 0 22 aGaMEW4iIMSo1;hafi_7;1
 l26
 L9
-VTF5;A@]LRP6TVbI4]fKXg2
-!s100 LPPEUl]=]C6J;>7RXLMPz2
+Z86 VTF5;A@]LRP6TVbI4]fKXg2
+Z87 !s100 LPPEUl]=]C6J;>7RXLMPz2
 R6
 32
-R79
-!i10b 1
-R80
 R81
+!i10b 1
 R82
+R83
+R84
 !i113 1
 R11
 R12
 Etb_adder
-Z84 w1568133341
+Z88 w1568133341
 R2
 R3
 R0
-Z85 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_adder.vhd
-Z86 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_adder.vhd
+Z89 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_adder.vhd
+Z90 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_adder.vhd
 l0
 L5
 VX[0`dYMA8Q7gQ1N]`KA4i1
 !s100 aa7Jz9Im6g3Y3FbKo7K:K3
 R6
 32
-Z87 !s110 1568133386
+Z91 !s110 1568133386
 !i10b 1
-Z88 !s108 1568133385.000000
-Z89 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_adder.vhd|
-Z90 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_adder.vhd|
+Z92 !s108 1568133385.000000
+Z93 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_adder.vhd|
+Z94 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_adder.vhd|
 !i113 1
 R11
 R12
@@ -606,11 +606,11 @@ V6adc7P5ee?R81mY49S0mU1
 !s100 KZKB]g]<Og9]IL1Jiid<X1
 R6
 32
-R87
+R91
 !i10b 1
-R88
-R89
-R90
+R92
+R93
+R94
 !i113 1
 R11
 R12
@@ -619,19 +619,19 @@ R13
 R2
 R3
 R0
-Z91 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_andg2.vhd
-Z92 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_andg2.vhd
+Z95 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_andg2.vhd
+Z96 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_andg2.vhd
 l0
 L24
 VngdhaQ4hG^]giPkNdb:FB0
 !s100 hL<QQ`f@3^J_;d2F]LdXA1
 R6
 32
-Z93 !s110 1568085721
+Z97 !s110 1568085721
 !i10b 1
-Z94 !s108 1568085721.000000
-Z95 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_andg2.vhd|
-Z96 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_andg2.vhd|
+Z98 !s108 1568085721.000000
+Z99 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_andg2.vhd|
+Z100 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_andg2.vhd|
 !i113 1
 R11
 R12
@@ -645,32 +645,32 @@ VBT4DE8zAic4PojHeJ622f0
 !s100 hHH:LJ:<U[_TUiHU2j:9g1
 R6
 32
-R93
+R97
 !i10b 1
-R94
-R95
-R96
+R98
+R99
+R100
 !i113 1
 R11
 R12
 Etb_comp
-Z97 w1567992218
+Z101 w1567992218
 R2
 R3
 R0
-Z98 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_comp.vhd
-Z99 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_comp.vhd
+Z102 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_comp.vhd
+Z103 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_comp.vhd
 l0
 L5
 VEUU1z[h@f1UNH=zCZ918M1
 !s100 >T>CO1QSFAej;3IW9o5^L3
 R6
 32
-R93
+R97
 !i10b 1
-R94
-Z100 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_comp.vhd|
-Z101 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_comp.vhd|
+R98
+Z104 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_comp.vhd|
+Z105 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_comp.vhd|
 !i113 1
 R11
 R12
@@ -684,32 +684,32 @@ V1Uj7h`9XKi>cmLYmWO5Ph2
 !s100 >QNQNzYh5@_6CIP`MG5L80
 R6
 32
-R93
+R97
 !i10b 1
-R94
-R100
-R101
+R98
+R104
+R105
 !i113 1
 R11
 R12
 Etb_mux
-Z102 w1567993822
+Z106 w1567993822
 R2
 R3
 R0
-Z103 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_mux.vhd
-Z104 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_mux.vhd
+Z107 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_mux.vhd
+Z108 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_mux.vhd
 l0
 L5
 Vz<_5U2oiIzd`RN?bz55kc0
 !s100 P>HCBTJQ>9:4=<em6dDbz2
 R6
 32
-R93
+R97
 !i10b 1
-R94
-Z105 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_mux.vhd|
-Z106 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_mux.vhd|
+R98
+Z109 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_mux.vhd|
+Z110 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/tb_mux.vhd|
 !i113 1
 R11
 R12
@@ -723,32 +723,32 @@ V9c?09`gm7hjE2[df<@UGj2
 !s100 cKRmcWo7N?Sbm1Jd2VoQM2
 R6
 32
-R93
+R97
 !i10b 1
-R94
-R105
-R106
+R98
+R109
+R110
 !i113 1
 R11
 R12
 Etwo_one_mux_struct
-Z107 w1567989132
+Z111 w1567989132
 R2
 R3
 R0
-Z108 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/two_one_mux_struct.vhd
-Z109 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/two_one_mux_struct.vhd
+Z112 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/two_one_mux_struct.vhd
+Z113 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/two_one_mux_struct.vhd
 l0
 L4
 V:SWFC<CjfQ;lgcT7lgKU73
 !s100 C9R6YMe4Td4o7PRZH1FaE1
 R6
 32
-R93
+R97
 !i10b 1
-R94
-Z110 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/two_one_mux_struct.vhd|
-Z111 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/two_one_mux_struct.vhd|
+R98
+Z114 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/two_one_mux_struct.vhd|
+Z115 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/two_one_mux_struct.vhd|
 !i113 1
 R11
 R12
@@ -762,11 +762,11 @@ Vm62;18S<R@J6`=IbO0TA03
 !s100 @kO6G=7h5TN1OBlO<6A612
 R6
 32
-R93
+R97
 !i10b 1
-R94
-R110
-R111
+R98
+R114
+R115
 !i113 1
 R11
 R12
@@ -775,19 +775,19 @@ R13
 R2
 R3
 R0
-Z112 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/xorg2.vhd
-Z113 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/xorg2.vhd
+Z116 8C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/xorg2.vhd
+Z117 FC:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/xorg2.vhd
 l0
 L23
 VK@e^LV@NIoQEFG<>mYGML0
 !s100 [hI[mXFH4_j16U;>U1Lfn2
 R6
 32
-R93
+R97
 !i10b 1
-R94
-Z114 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/xorg2.vhd|
-Z115 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/xorg2.vhd|
+R98
+Z118 !s90 -reportprogress|300|-work|work|C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/xorg2.vhd|
+Z119 !s107 C:/Users/igneo/Documents/cpre381/Lab-02/Lab-02/xorg2.vhd|
 !i113 1
 R11
 R12
@@ -801,11 +801,11 @@ VNhjJam]<eOn>h_SB`YlEa0
 !s100 Z6[FAPS4fBLB`F?OO<AY72
 R6
 32
-R93
+R97
 !i10b 1
-R94
-R114
-R115
+R98
+R118
+R119
 !i113 1
 R11
 R12

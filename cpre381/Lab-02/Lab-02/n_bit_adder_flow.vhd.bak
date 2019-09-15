@@ -18,7 +18,7 @@ begin
 --------------------------------------------------------------
 C_in(0) <= n_A(0) and n_B(0);
 
-n_Sum(0) <= (n_A(0) and n_B(0)) or (n_A(0) and C_in(N-1)) or (n_B(0) and C_in(N-1)); ---- Breaks couse of this sometimes
+n_Sum(0) <= n_A(0) xor n_B(0); ------------ It would be good to chang this for a carry in
 
 G1: for i in 1 to N-1 generate
  

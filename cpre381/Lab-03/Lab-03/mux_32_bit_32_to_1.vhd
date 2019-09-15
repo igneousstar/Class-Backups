@@ -1,0 +1,86 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+--------------------------------------------------------------
+
+entity mux_32_bit_32_to_1 is 
+	port(	i_sel  : in std_logic_vector(4 downto 0);
+		o_0   : in std_logic_vector(31 downto 0);
+		o_1   : in std_logic_vector(31 downto 0);
+		o_2   : in std_logic_vector(31 downto 0);
+		o_3   : in std_logic_vector(31 downto 0);
+		o_4   : in std_logic_vector(31 downto 0);
+		o_5   : in std_logic_vector(31 downto 0);
+		o_6   : in std_logic_vector(31 downto 0);
+		o_7   : in std_logic_vector(31 downto 0);
+		o_8   : in std_logic_vector(31 downto 0);
+		o_9   : in std_logic_vector(31 downto 0);
+		o_10  : in std_logic_vector(31 downto 0);
+		o_11  : in std_logic_vector(31 downto 0);
+		o_12  : in std_logic_vector(31 downto 0);
+		o_13  : in std_logic_vector(31 downto 0);
+		o_14  : in std_logic_vector(31 downto 0);
+		o_15  : in std_logic_vector(31 downto 0);
+ 		o_16  : in std_logic_vector(31 downto 0);
+		o_17  : in std_logic_vector(31 downto 0);
+		o_18  : in std_logic_vector(31 downto 0);
+		o_19  : in std_logic_vector(31 downto 0);
+		o_20  : in std_logic_vector(31 downto 0);
+		o_21  : in std_logic_vector(31 downto 0);
+		o_22  : in std_logic_vector(31 downto 0);
+		o_23  : in std_logic_vector(31 downto 0);
+		o_25  : in std_logic_vector(31 downto 0);
+		o_26  : in std_logic_vector(31 downto 0);
+		o_27  : in std_logic_vector(31 downto 0);
+		o_28  : in std_logic_vector(31 downto 0);
+		o_29  : in std_logic_vector(31 downto 0);
+		o_30  : in std_logic_vector(31 downto 0);
+		o_31  : in std_logic_vector(31 downto 0);
+		o_F   : out std_logic_vector(31 downto 0));
+end mux_32_bit_32_to_1;
+
+--------------------------------------------------------------
+
+architecture dataflow of mux_32_bit_32_to_1 is
+begin 
+
+--------------------------------------------------------------
+	with i_sel select 
+	o_F <=  o_0 when "00000",
+		o_1 when "00001",
+		o_2 when "00010",
+		o_3 when "00011",
+		o_4 when "00100",
+		o_5 when "00101",
+		o_6 when "00110",
+		o_7 when "00111",
+		o_8 when "01000",
+		o_9 when "01001",
+		o_10 when "01010",
+		o_11 when "01011",
+		o_12 when "01100",
+		o_13 when "01101",
+		o_14 when "01110",
+		o_15 when "01111",
+		o_16 when "10000",
+		o_17 when "10001",
+		o_18 when "10010",
+		o_19 when "10011",
+		o_20 when "10100",
+		o_21 when "10101",
+		o_22 when "10110",
+		o_23 when "10111",
+		o_25 when "11000",
+		o_26 when "11001",
+		o_27 when "11010",
+		o_28 when "11011",
+		o_29 when "11100",
+		o_30 when "11110",
+		o_31 when "11111",
+		x"00000000" when others;
+		
+
+
+--------------------------------------------------------------
+
+end dataflow; 

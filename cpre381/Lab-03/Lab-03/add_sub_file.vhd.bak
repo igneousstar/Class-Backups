@@ -1,0 +1,86 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use work.mypackage.all;
+
+----------------------------------------------------------------
+
+entity add_sub_file is 
+	port(	imm  : in std_logic_vector(31 downto 0);
+		ALUsrc  : in std_logic;
+		nAdd_Sub : in std_logic;
+		i_RST : in std_logic;
+		i_CLK : in std_logic;
+		reg_A_sel : in std_logic_vector(4 downto 0);
+		reg_B_sel : in std_logic_vector(4 downto 0);
+		reg_dst   : in std_logic_vector(4 downto 0));
+end add_sub_file;
+
+---------------------------------------------------------------
+
+architecture structure of add_sub_file is
+
+component n_bit_2_1_mux_flow
+	generic(N : integer := 32);
+	port(	n_A  : in std_logic_vector(N-1 downto 0);
+		n_B  : in std_logic_vector(N-1 downto 0);
+		n_F  : out std_logic_vector(N-1 downto 0);
+		s    : in std_logic);
+end component;
+
+
+component mips_reg_file is 
+	port(	
+		i_RST	: in std_logic;
+		i_Clk	: in std_logic;
+		rd_sel_0  : in std_logic_vector(4 downto 0);
+		rd_sel_1  : in std_logic_vector(4 downto 0);
+		wr_sel	: in std_logic_vector(4 downto 0);
+		wr_in	: in std_logic_vector(31 downto 0);
+		rd_out_0 : out std_logic_vector(31 downto 0);
+		rd_out_1 : out std_logic_vector(31 downto 0));
+end component;
+
+component add_sub is 
+	generic(N : integer := 32);
+	port(	n_A  : in std_logic_vector(N-1 downto 0);
+		n_B  : in std_logic_vector(N-1 downto 0);
+		n_result  : out std_logic_vector(N-1 downto 0);
+		sel	  : in std_logic);
+end component;
+
+signal read_one_out, read_two_out, alu_out, mux_out, test_sig : std_logic_vector(31 downto 0);
+
+begin
+
+mux: n_bit_2_1_mux_flow
+  generic map(32)
+	port map(n_A => read_two_out,
+		n_B => imm,
+		n_F => mux_out,
+		s => ALUsrc);
+
+alu: add_sub
+	generic map(32)
+	port map(n_A  => read_one_out,
+		n_B  => mux_out,
+		n_result  => alu_out,
+		sel => nAdd_Sub);
+
+reg_file: mips_reg_file
+	port map(	
+		i_RST => i_RST,
+		i_Clk => i_CLK,
+		rd_sel_0  => reg_A_sel,
+		rd_sel_1  => reg_B_sel,
+		wr_sel	=> reg_dst,
+		wr_in	=> x"00000000",
+		rd_out_0 => read_one_out,
+		rd_out_1 => read_two_out);
+
+
+end structure;
+
+
+
+
+

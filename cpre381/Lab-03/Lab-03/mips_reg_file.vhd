@@ -1,0 +1,95 @@
+
+
+--------------------------------------------------------------
+library IEEE;
+use IEEE.std_logic_1164.all;
+use work.mypackage.all;
+-----------------------------------------------------
+
+entity mips_reg_file is 
+	port(	
+		i_RST	: in std_logic;
+		i_Clk	: in std_logic;
+		rd_sel_0  : in std_logic_vector(4 downto 0);
+		rd_sel_1  : in std_logic_vector(4 downto 0);
+		wr_sel	: in std_logic_vector(4 downto 0);
+		wr_in	: in std_logic_vector(31 downto 0);
+		rd_out_0 : out std_logic_vector(31 downto 0);
+		rd_out_1 : out std_logic_vector(31 downto 0));
+end mips_reg_file;
+
+architecture structure of mips_reg_file is
+
+--package mypackage is new
+
+ -- subtype chunk is std_logic_vector(31 downto 0); -- 
+ --      type chunk_array is array (0 to 31) of chunk; -- 
+
+--end package; 
+
+component mux_reg_out is 
+	port(	
+		mux_in	: in chunk_array;
+		sel	: in std_logic_vector(4 downto 0);
+		mux_out : out std_logic_vector(31 downto 0));
+		
+end component;
+
+component n_bit_reg is 
+	generic(N : integer := 32);
+	port(	i_CLK   : in std_logic;
+		i_RST	: in std_logic;
+		i_WE	: in std_logic;
+		i_reg  : in std_logic_vector(N-1 downto 0);
+		o_reg  : out std_logic_vector(N-1 downto 0));
+end component;
+
+component decoder_32_bit is 
+	port(	i_sel  : in std_logic_vector(4 downto 0);
+		o_F  : out std_logic_vector(31 downto 0));
+end component;
+
+signal reg_out_array : chunk_array;
+signal decoder_out : std_logic_vector(31 downto 0);
+
+begin
+
+decoder: decoder_32_bit
+	port map( i_sel => wr_sel,
+		o_F => decoder_out);
+
+reg_0: n_bit_reg
+	generic map(32)
+	port map(i_CLK  => i_CLK,
+		i_RST => '0',
+		i_WE => decoder_out(0),
+		i_reg  => x"00000000",
+		o_reg => reg_out_array(0));
+		
+
+G1: for i in 1 to 31 generate
+  reg_i: n_bit_reg
+	generic map(32)
+	port map(i_CLK  => i_CLK,
+		i_RST => i_RST,
+		i_WE => decoder_out(i),
+		i_reg  => wr_in,
+		o_reg => reg_out_array(i));
+
+
+end generate;
+
+mux_0 : mux_reg_out
+	port map(	
+		mux_in	=> reg_out_array,
+		sel	=> rd_sel_0,
+		mux_out => rd_out_0);
+
+mux_1 : mux_reg_out
+	port map(	
+		mux_in	=> reg_out_array,
+		sel	=> rd_sel_1,
+		mux_out => rd_out_1);
+
+
+end structure;
